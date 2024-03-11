@@ -9,6 +9,7 @@
 /* layout */
 .body {
     height: 100vh;
+    background-image: url(../img/mine.jpg);
 }
 
 .header-color {
@@ -28,7 +29,7 @@
     width: 100%;
 }
 
-.first-chat, .icons-chats {
+.first-chat, .icons-chat {
     display: none;
 
     /* debug */
@@ -70,11 +71,109 @@
         width: 30%;
     }
 
-    .icons-chats {
+    .icons-chat {
         display: block;
     }
 
     .info-chat {
         width: 70%;
+    }
+}
+
+/* MAIN */
+/* colonna delle chat */
+.main-content {
+
+    /* debug */
+    height: 92vh;
+}
+
+.container-chats {
+    background-color: rgb(255 255 255);
+    display: none;
+
+    /* debug */
+    padding: 25px;
+}
+
+.notifications {
+    background-color: rgb(142 218 252);
+    display: none;
+
+    /* debug */
+    height: 50px;
+}
+
+.find-chat {
+    display: none;
+
+    /* debug */
+    height: 25px;
+    border: 1px solid black;
+}
+
+.chat-names {
+    display: none;
+
+    /* debug */
+    height: 75%;
+    border: 1px solid red;
+}
+
+/* chat con messaggi */
+.container-message-bar {
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.container-message {
+    padding: 20px;
+}
+
+.row-first-message {
+    justify-content: flex-end;
+}
+
+.first-message {
+    background-color:  rgb(213 249 186);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 0 20px;
+    width: 70%;
+}
+    
+.second-message {
+    background-color: rgb(255 255 255);
+    border-radius: 10px;
+    padding: 10px;
+    width: 70%;
+}
+
+.write.bar {
+
+    /* debug */
+    height: 50px;
+    width: 100%;
+    border: 1px solid green;
+}
+
+@media screen and (min-width: 768px) {
+    .container-chats {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container-message-bar {
+        width: 70%;
+    }
+
+    .container-chats {
+        width: 30%;
+        padding: 0;
+    }
+
+    .notifications, .find-chat, .chat-names {
+        display: block;
     }
 }
