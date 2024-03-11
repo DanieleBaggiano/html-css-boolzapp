@@ -4,3 +4,77 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* COMMON */
+/* layout */
+.body {
+    height: 100vh;
+}
+
+.header-color {
+    background-color: rgb(234 234 234);
+}
+
+/* utilities */
+.flex {
+    display: flex;
+}
+
+/* HEADER */
+.info-chat {
+    justify-content: space-between;
+
+    /* debug */
+    width: 100%;
+}
+
+.first-chat, .icons-chats {
+    display: none;
+
+    /* debug */
+    background-color: aqua;
+    width: 50px;
+    height: 50px;
+}
+
+.michele {
+
+    /* debug */
+    height: 50px;
+    width: 60%;
+    background-color: red;
+}
+
+.icons {
+    display: none;
+
+    /* debug */
+    width: 20%;
+    height: 50px;
+    background-color: aqua;
+}
+
+@media screen and (min-width: 768px) {
+    .first-chat, .icons {
+        display: block;
+    }
+
+    .michele {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .chats {
+        justify-content: space-between;
+        width: 30%;
+    }
+
+    .icons-chats {
+        display: block;
+    }
+
+    .info-chat {
+        width: 70%;
+    }
+}
