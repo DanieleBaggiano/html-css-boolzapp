@@ -13,14 +13,8 @@
     <title>Boolzapp</title>
 </head>
 <body>
-    <div class="body">
-        <!-- header -->
-        <header>
-        </header>
-        <!-- /header -->
-
         <!-- main -->
-        <main class="flex">
+        <section class="flex background-image">
             <!-- colonna delle chat -->
             <div class="container-chats flex">
                 <!-- header colonna sinistra -->
@@ -39,23 +33,42 @@
             <div class="container-message-bar flex">
                 <!-- header colonna destra -->
                 <div class="info-chat flex header-color">
-                    <div class="michele"></div>
+                    <div class="michele flex">
+                        <img class="avatar1" src="./img/avatar_1.jpg" alt="Michele avatar1">
+                        <div class="michele-access">
+                            <h4 class="michele-h4">Michele</h4>
+                            <span class="last-access">Ultimo accesso oggi alle 16:26</span>
+                        </div>
+                    </div>
                     <div class="icons"></div>
                 </div>
 
                 <div class="container-message">
                     <div class="row-first-message flex">
-                        <p class="first-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo placeat architecto quibusdam veritatis autem ipsa velit non rem possimus cupiditate recusandae, ad quaerat consequatur reprehenderit molestiae soluta, dicta nobis! Velit?</p>
+                        <div class="first-message flex">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo placeat architecto quibusdam veritatis autem ipsa velit non rem possimus cupiditate recusandae, ad quaerat consequatur reprehenderit molestiae soluta, dicta nobis! Velit?</p>
+                            <div class="chevron-time flex">
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <span class="time">16:13</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="row-second-message flex">
-                        <p class="second-message">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque quia, corporis error porro veniam magni perspiciatis numquam sapiente ad, vitae labore blanditiis temporibus dolorum. Dignissimos, iste. Reiciendis, optio sed. Aliquam.</p>
+                        <div class="second-message flex">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque quia, corporis error porro veniam magni perspiciatis numquam sapiente ad, vitae labore blanditiis temporibus dolorum. Dignissimos, iste. Reiciendis, optio sed. Aliquam.</p>
+                            <div class="chevron-time flex">
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <span class="time">16:16</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="write bar"></div>
+                <div class="write-bar">
+                    <input class="write-message" type="text" placeholder="Scrivi un messaggio">
+                </div>
             </div>
-        </main>
+        </section>
         <!-- /main -->
-    </div>
 </body>
 </html>

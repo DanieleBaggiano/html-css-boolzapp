@@ -7,7 +7,7 @@
 
 /* COMMON */
 /* layout */
-.body {
+.background-image {
     height: 100vh;
     background-image: url(../img/mine.jpg);
 }
@@ -28,10 +28,11 @@
 /* HEADER */
 .info-chat {
     justify-content: space-between;
+    width: 100%;
+    height: fit-content;
 
     /* debug */
-    width: 100%;
-    height: 50px;
+    /* height: 50px; */
 }
 
 .first-chat, .icons-chat {
@@ -44,11 +45,29 @@
 }
 
 .michele {
+    align-items: center;
 
     /* debug */
+    /* height: 50px; */
+    /* width: 60%; */
+    /* background-color: red; */
+}
+
+.avatar1 {
+    object-fit: cover;
+    border-radius: 50%;
     height: 50px;
-    width: 60%;
-    background-color: red;
+    width: 50px;
+    margin: 10px;
+}
+
+.michele-access {
+    padding: 10px;
+}
+
+.last-access, .chevron-time{
+    font-size: 0.8rem;
+    color: rgb(119 124 125);
 }
 
 .icons {
@@ -66,7 +85,7 @@
     }
 
     .michele {
-        width: 30%;
+        /* width: 30%; */
     }
 }
 
@@ -110,23 +129,25 @@
 .chat-names {
     display: none;
     overflow-y: scroll;
-    flex-basis: 604px;
 
     /* debug */
     height: 75%;
     border: 1px solid red;
+    /* flex-basis: 604px; */
 }
 
 /* chat con messaggi */
 .container-message-bar {
-    flex-wrap: wrap;
-    height: 100vh;
+    flex-direction: column;
+
+    /* debug */
+    /* height: 100%; */
 }
 
 .container-message {
     padding: 20px;
     overflow-y: scroll;
-    height: 86%;
+    height: 100%;
 }
 
 .row-first-message {
@@ -148,13 +169,37 @@
     width: 70%;
 }
 
-.write.bar {
+.chevron-time {
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+.write-bar {
     margin-top: auto;
+    background-color: rgb(243 238 234);
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
 
     /* debug */
-    height: 50px;
-    width: 100%;
-    border: 1px solid green;
+    /* height: 50px; */
+    /* width: 100%; */
+    /* border: 1px solid green; */
+    /* text-align: center; */
+}
+
+.write-message {
+    height: 90%;
+    width: 95%;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+
+    /* debug */
+    /* margin: 10px; */
 }
 
 @media screen and (min-width: 768px) {
