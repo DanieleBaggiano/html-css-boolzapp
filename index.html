@@ -18,8 +18,21 @@
             <!-- colonna delle chat -->
             <div class="container-chats flex">
                 <!-- header colonna sinistra -->
-                <div class="chats flex header-color">
-                    <div class="first-chat"></div>
+                <div class="chats flex column">
+                    <div class="first-chat header-color">
+                        <img class="avatar_io" src="./img/avatar_io.jpg" alt="avatar_io">
+                    </div>
+                    <div class="column-chats flex column">
+                        <img class="avatar1" src="./img/avatar_1.jpg" alt="Michele avatar1"> <hr>
+                        <img class="avatar2" src="./img/avatar_2.jpg" alt="Fabio avatar2">
+                        <hr>
+                        <img class="avatar3" src="./img/avatar_3.jpg" alt="Samuele avatar3"> <hr>
+                        <img class="avatar4" src="./img/avatar_4.jpg" alt="Alessandro B. avatar4"> <hr>
+                        <img class="avatar5" src="./img/avatar_5.jpg" alt="Alessandro L. avatar5"> <hr>
+                        <img class="avatar6" src="./img/avatar_6.jpg" alt="Claudia avatar6"> <hr>
+                        <img class="avatar7" src="./img/avatar_7.jpg" alt="Federico avatar7"> <hr>
+                        <img class="avatar8" src="./img/avatar_8.jpg" alt="Davide avatar8">
+                    </div>
                     <div class="icons-chat"></div>
                 </div>
                 <div class="notifications"></div>
@@ -30,7 +43,7 @@
             </div>
 
             <!-- chat con messaggi -->
-            <div class="container-message-bar flex">
+            <div class="container-message-bar column flex">
                 <!-- header colonna destra -->
                 <div class="info-chat flex header-color">
                     <div class="michele flex">
@@ -40,14 +53,18 @@
                             <span class="last-access">Ultimo accesso oggi alle 16:26</span>
                         </div>
                     </div>
-                    <div class="icons"></div>
+                    <div class="icons">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-paperclip"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
                 </div>
 
                 <div class="container-message">
                     <div class="row-first-message flex">
                         <div class="first-message flex">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo placeat architecto quibusdam veritatis autem ipsa velit non rem possimus cupiditate recusandae, ad quaerat consequatur reprehenderit molestiae soluta, dicta nobis! Velit?</p>
-                            <div class="chevron-time flex">
+                            <div class="chevron-time column flex">
                                 <i class="fa-solid fa-chevron-down"></i>
                                 <span class="time">16:13</span>
                             </div>
@@ -56,7 +73,7 @@
                     <div class="row-second-message flex">
                         <div class="second-message flex">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque quia, corporis error porro veniam magni perspiciatis numquam sapiente ad, vitae labore blanditiis temporibus dolorum. Dignissimos, iste. Reiciendis, optio sed. Aliquam.</p>
-                            <div class="chevron-time flex">
+                            <div class="chevron-time column flex">
                                 <i class="fa-solid fa-chevron-down"></i>
                                 <span class="time">16:16</span>
                             </div>
@@ -65,7 +82,9 @@
                 </div>
 
                 <div class="write-bar">
+                    <span class="smile"><i class="fa-regular fa-face-smile"></i></span>
                     <input class="write-message" type="text" placeholder="Scrivi un messaggio">
+                    <span class="microphone"><i class="fa-solid fa-microphone"></i></span>
                 </div>
             </div>
         </section>
