@@ -55,6 +55,7 @@
     align-items: center;
     padding-top: 11px;
     overflow-y: scroll;
+    display: none;
 }
 
 .michele {
@@ -110,8 +111,13 @@ hr {
         display: flex;
     }
 
-    .first-chat {
+    .chat-avatar-io {
         border-right: 1px solid lightgray;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .first-chat {
         display: block;
     }
 
@@ -125,8 +131,35 @@ hr {
         justify-content: space-between;
     }
 
+    .column-chats {
+        display: flex;
+    }
+
+    .avatars {
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .avatar1, .avatar_io,
+    .avatar2, .avatar3,
+    .avatar4, .avatar5,
+    .avatar6, .avatar7,
+    .avatar8 {
+        margin-right: 10px;
+    }
+
+    .lorem {
+        font-size: 0.8rem;
+        color: lightgray;
+    }
+
     .icons-chat {
-        display: block;
+        display: flex;
+        font-size: 1.5rem;
+        color: rgb(176, 175, 175);
+        gap: 15px;
+        padding: 10px;
     }
 }
 
@@ -170,10 +203,24 @@ i.fa-solid.fa-bell-slash {
 
 .find-chat {
     display: none;
+    background-color: rgb(250 250 250);
+    padding: 5px;
+    text-align: center;
 
     /* debug */
     /* height: 25px; */
     /* border: 1px solid black; */
+}
+
+.input-with-icon {
+    background-image: url(https://fontawesome.com/icons/magnifying-glass?f=classic&s=solid);
+    border: none;
+    background-color: white;
+    border: 1px solid rgb(231, 228, 228);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    padding: 10px;
+    width: 95%;
 }
 
 .chat-names {
