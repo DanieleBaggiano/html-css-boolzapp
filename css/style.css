@@ -120,10 +120,6 @@ hr {
     .first-chat {
         display: block;
     }
-
-    .michele {
-        /* width: 30%; */
-    }
 }
 
 @media screen and (min-width: 992px) {
@@ -213,14 +209,25 @@ i.fa-solid.fa-bell-slash {
 }
 
 .input-with-icon {
-    background-image: url(https://fontawesome.com/icons/magnifying-glass?f=classic&s=solid);
     border: none;
-    background-color: white;
     border: 1px solid rgb(231, 228, 228);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 2px;
     padding: 10px;
     width: 95%;
+    border-left: 0;
+}
+
+.glass {
+    border: none;
+    border: 1px solid rgb(231, 228, 228);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    padding: 10px;
+    border-right: 0;
+    cursor: pointer;
+    color: rgba(0, 0, 0, .3);
+    background-color: rgb(255 255 255);
 }
 
 .chat-names {
@@ -231,13 +238,6 @@ i.fa-solid.fa-bell-slash {
     height: 75%;
     border: 1px solid red;
     /* flex-basis: 604px; */
-}
-
-/* chat con messaggi */
-.container-message-bar {
-
-    /* debug */
-    /* height: 100%; */
 }
 
 .container-message {
@@ -323,11 +323,7 @@ i.fa-solid.fa-bell-slash {
         padding: 0;
     }
 
-    .find-chat, .chat-names {
-        display: block;
-    }
-
-    .notifications {
+    .notifications, .find-chat {
         display: flex;
         align-items: center;
     }
